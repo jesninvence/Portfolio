@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anonymous+Pro:wght@400;700&family=Asap+Condensed:wght@300&family=Gabarito&family=Karla:wght@800&family=League+Spartan:wght@500&family=Montserrat:wght@400;500;600;700&family=Oswald:wght@300;700&family=Permanent+Marker&family=Righteous&family=Roboto+Slab:wght@300;500&family=Rubik+Wet+Paint&family=Source+Code+Pro:wght@300;600;700&family=Ultra&family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anonymous+Pro:wght@400;700&family=Anton&family=Asap+Condensed:wght@300&family=Gabarito&family=Karla:wght@800&family=League+Spartan:wght@500&family=Montserrat:wght@400;500;600;700&family=Oswald:wght@300;700&family=Permanent+Marker&family=Righteous&family=Roboto+Slab:wght@300;500&family=Rubik+Wet+Paint&family=Source+Code+Pro:wght@300;600;700&family=Ultra&family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anonymous+Pro:wght@400;700&family=Anton&family=Asap+Condensed:wght@300&family=Gabarito&family=Karla:wght@800&family=League+Spartan:wght@500&family=Montserrat:wght@400;500;600;700&family=Open+Sans&family=Oswald:wght@300;700&family=Permanent+Marker&family=Righteous&family=Roboto+Slab:wght@300;500&family=Rubik+Wet+Paint&family=Source+Code+Pro:wght@300;600;700&family=Ultra&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body {
+  background-color: black;
+}
+
+li, a {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 3%;
+  border-bottom: 1px solid rgb(48, 48, 48);
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  cursor: pointer;
+  margin-right: auto;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.nav__links li a {
+  color: rgb(188, 188, 188);
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: white;
+}
+
+button {
+  margin-left: 1rem;
+  color: rgb(188, 188, 188);
+  padding: 10px 25px;
+  border: 2px solid rgb(188, 188, 188);
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+/****HOME****/
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: white;
+}
+
+.home h1 {
+  margin-top: 5rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 85px;
+  color: white;
+}
+
+.home p {
+  color: rgb(188, 188, 188);
+  font-size: 18px;
+  margin-bottom: 0rem;
+}
+
+.socmed {
+  margin: 0.5rem;
+  display: inline-block;
+  padding: 1em 0;
+  border-radius: 0;
+	color: rgb(188, 188, 188);
+  letter-spacing: 1px;
+	text-transform: none;
+	text-decoration: none;
+  position: relative;
+  &:before,
+  &:after{
+	content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 0;
+
+	}
+	&:before{
+		transition: width 0s ease,background .4s ease;
+		left: 0;
+		right: 0;
+    	bottom: 6px;
+	}
+	&:after{
+		right: 2.2%;
+    	bottom: 6px;
+    	background: white;
+		transition: width .4s ease;
+	}
+	
+	&:hover{
+		&:before{
+			width: 97.8%;
+			background: white;
+    		transition: width .4s ease;
+		}
+		&:after{
+			width: 97.8%;
+    		background: 0 0;
+			transition: all 0s ease;
+		}
+	}
+}
+
+.cntc, .more {
+  text-transform: uppercase;
+  margin-left: 1px;
+  width: 45%;
+  border: 1px solid rgb(188, 188, 188);
+}
+
+.hide-lg {
+    display: none !important;
+}
+
+@media screen and (max-width: 410px) {
+  .hide-sm {
+    display: none;
+  }
+  .display-sm {
+    display: flex !important;
+  }
+  .home h1 {
+    margin-top: 0rem !important;
+  }
+  .home .socmed {
+    font-size: 12px;
+  }
+  .home button {
+    width: 100%;
+  }
+}
+
+/*****PROCESS****/
+
+.process h1 {
+  margin-top: 5rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.process .disc {
+  color: rgb(188, 188, 188);
+  font-size: 25px;
+}
+
+.process .card {
+  margin-top: 3rem;
+  background-color: rgb(22, 22, 22);
+  border: none;
+  box-shadow: 0 0 0 1px rgb(60, 60, 60);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.process .card h2 {
+  background-color: transparent;
+  color: white;
+}
+
+.process .card p {
+  background-color: transparent;
+  margin-top: 1rem;
+  font-size: 20px;
+  color: white;
+}
+
+/*========= SEARCH =========*/
+
+.bx-menu {
+  color: white;
+  font-size: 45px;
+}
+
+.search p {
+  background-color: transparent;
+}
+
+.search p a {
+  background-color: transparent;
+  font-size: 30px;
+}
+
+.search {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.318);
+  backdrop-filter: blur(16px);
+  padding: 8rem 1.5rem;
+  transition: top .4s;
+}
+
+.search h1 {
+  font-family: "Roboto Slab", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.search__form {
+  width: 50%;
+  margin-left: 19rem;
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  background-color: transparent;
+  border: 1px solid #00000062;
+  padding-inline: 1rem;
+}
+
+.search__form input {
+  border: none;
+}
+
+.search__input::placeholder {
+  color: black;
+  border: none;
+}
+
+.search__icon {
+  font-size: 1.25rem;
+  color: black;
+  background-color: transparent;
+}
+
+.search input {
+  background-color: transparent;
+}
+
+.search__input {
+  width: 100%;
+  padding-block: .5rem;
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.search .search__close {
+  display: flex;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.show-search {
+  top: 0;
+}
+
+/*****CONNECT****/
+
+.connect {
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+.connect h6 {
+  color: rgb(188, 188, 188);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.connect h1 {
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 10rem;
+  letter-spacing: 5px;
+}
+
+.connect span {
+  background-color: transparent;
+  color: rgb(158, 158, 158);
+}
+
+@media screen and (max-width: 410px) {
+  .connect h1 {
+    font-size: 6.5rem;
+  }
+}
+
+/*****FOOTER*****/
+
+.footer {
+  border-top: 1px solid rgb(158, 158, 158);
+  margin-bottom: 1rem;
+}
+
+.footer h5 {
+  margin-top: 2rem;
+  color: white;
+  font-weight: 300;
+}
+
+.footer span {
+  background-color: transparent;
+  color: rgb(158, 158, 158);
+}
+
+/*****ABOUT******/
+
+.about {
+  margin-top: 3rem;
+}
+
+.about .disc {
+  padding: 0px 20px;
+}
+
+.about .card {
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.about .profile {
+  border-right: 1px solid white;
+  padding: 0px 30px;
+}
+
+.about .disc h1 {
+  margin-top: 7rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 55px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.about .disc button {
+  margin-top: 1rem;
+  border: none;
+  box-shadow: 0 0 0 2px rgb(188, 188, 188);
+}
+
+.about p {
+  color: rgb(188, 188, 188);
+  font-size: 20px;
+}
+
+.about .award-disc h1 {
+  font-size: 70px;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  margin-top: 5rem;
+  text-transform: uppercase;
+}
+
+.about .award-disc h1 span {
+  font-size: 70px;
+  letter-spacing: 2px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: black;
+}
+
+.about .award-disc p {
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.about .award i {
+  color: white;
+  font-size: 20px;
+}
+
+.about .award {
+  box-shadow: 1px 1px 0px 0px white;
+  padding: 2px 15px;
+  border-radius: 50px;
+}
+
+.about .award p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 200px;
+}
+
+.about span {
+  font-size: 20px;
+  color: rgb(188, 188, 188);
+}
+
+.reward {
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 410px) {
+  .about {
+    margin-top: 0rem;
+  }
+  .about .profile {
+    border-right: none;
+  }
+  .about .disc h1 {
+    margin-top: 1rem;
+    font-size: 40px !important;
+  }
+  .about .disc p {
+    font-size: 15px;
+  }
+}
+
+/*****project*****/
+
+.title {
+  margin: 2rem;
+  letter-spacing: 2px;
+  font-size: 80px;
+  font-family: 'Anton', sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: black;
+}
+
+.project {
+  margin-top: 5rem;
+}
+.project h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.project p {
+  color: rgb(188, 188, 188);
+}
+
+.project .line {
+  border-top: 2px solid white;
+  margin-bottom: 3rem;
+}
+
+.col-6 {
+  margin-top: 5rem;
+}
+
+.item h1 {
+  font-size: 50px;
+}
+
+.item p {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.item a {
+  margin-top: 2rem;
+  display: inline-block;
+  	padding: 1em 0;
+  	border-radius: 0;
+	  color: rgb(188, 188, 188);
+  	letter-spacing: 1px;
+  	text-transform: none;
+  	text-decoration: none;
+	position: relative;
+	&:before,
+	&:after{
+		content: '';
+    	display: block;
+    	position: absolute;
+    	height: 1px;
+    	width: 0;
+
+	}
+	&:before{
+		transition: width 0s ease,background .4s ease;
+		left: 0;
+		right: 0;
+    	bottom: 6px;
+	}
+	&:after{
+		right: 2.2%;
+    	bottom: 6px;
+    	background: white;
+		transition: width .4s ease;
+	}
+	
+	&:hover{
+		&:before{
+			width: 97.8%;
+			background: white;
+    		transition: width .4s ease;
+		}
+		&:after{
+			width: 97.8%;
+    		background: 0 0;
+			transition: all 0s ease;
+		}
+	}
+}
+
+.project img {
+  border: 1px solid white;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 410px) {
+  .project {
+    margin-top: 2rem;
+  }
+}
+
+/*======CONTACT=======*/
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h1 {
+  margin-top: 3rem;
+  color: white;
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+}
+
+.contact span {
+  color: rgb(158, 158, 158);
+}
+
+.contact .card span {
+  margin-left: 1rem;
+  color: white;
+}
+
+.contact p {
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
+}
+
+.contact .card {
+  background-color: transparent;
+  box-shadow: 0 0 0 1px rgb(65, 65, 65);
+  padding: 20px 20px;
+  margin-bottom: 2rem;
+}
+
+.contact .card p {
+  font-size: 20px;
+}
+
+.form {
+  margin-top: 7.3rem;
+}
+
+.contact .form .card {
+  width: 100%;
+}
+
+.contact textarea::placeholder {
+  color: white;
+}
+
+.contact input::placeholder {
+  color: white;
+}
+
+.contact input {
+  color: white;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: rgb(25, 25, 25);
+  border: none;
+  box-shadow: 0 0 0 1px rgb(48, 48, 48);
+  border-radius: 10px;
+}
+
+.contact .message {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: rgb(25, 25, 25);
+  box-shadow: 0 0 0 1px rgb(48, 48, 48);
+  border: none;
+}
+
+.contact .submit {
+  margin-top: 1rem;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: rgb(25, 25, 25);
+  box-shadow: 0 0 0 1px rgb(48, 48, 48);
+  transition: .3s;
+  border: none;
+}
+
+.contact .submit:hover {
+  background-color: rgb(18, 18, 18);
+}
+
+@media screen and (max-width: 410px) {
+  .form {
+    margin-top: 0rem;
+  }
+  .contact h1 {
+    font-size: 75px;
+  }
+}
