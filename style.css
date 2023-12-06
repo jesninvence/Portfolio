@@ -163,21 +163,35 @@ button:hover {
 }
 
 @media (max-width: 450px) {
+  .home {
+    width: 100%;
+    overflow: hidden !important;
+  }
   .hide-sm {
     display: none;
   }
   .display-sm {
     display: flex !important;
   }
+  .home p {
+    font-size: 20px;
+  }
   .home h1 {
     font-size: 84px;
-    margin-top: 0rem !important;
+    margin-top: 1rem !important;
   }
   .home .socmed {
-    font-size: 12px;
+    font-size: 15px;
   }
   .home button {
     width: 100%;
+  }
+  .connect {
+    width: 100%;
+    overflow: hidden !important;
+  }
+  .connect h1 {
+    font-size: 7.5rem !important;
   }
 }
 
@@ -329,6 +343,17 @@ button:hover {
   color: rgb(158, 158, 158);
 }
 
+@media screen and (max-width: 450px) {
+  .footer {
+    overflow: hidden;
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
 /*****ABOUT******/
 
 .about {
@@ -434,6 +459,15 @@ button:hover {
   }
   .about .disc p {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about .profile {
+    border-right: none;
+  }
+  .about .disc {
+    padding: 0px 0px;
   }
 }
 
@@ -550,7 +584,6 @@ button:hover {
 .modal {
   background-color: rgba(255, 255, 255, 0.161);
   color: white;
-  border-radius: 10px;
 }
 
 .modal-header h5 {
@@ -671,5 +704,16 @@ button:hover {
   }
   .contact h1 {
     font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact .disc h1 {
+    font-size: 88px !important;
+    width: 100%;
+  }
+  
+  .form {
+    margin-top: 0rem;
   }
 }
