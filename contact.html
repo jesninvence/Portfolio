@@ -17,6 +17,14 @@
     <link rel="icon" type="image/x-icon" href="img/jlogo2.jpg">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("mR0O0c9nNKODBx_tI");
+   })();
+</script>
 </head>
 <body>
     <header> 
@@ -61,11 +69,11 @@
                 <div class="col-12 col-sm-6">
                     <div class="form">
                         <div class="card">
-                            <form action="">
-                                <input type="name" placeholder="Your Name" required>
-                                <input type="email" placeholder="Your Email" required style="margin-top: 1rem;">
-                                <textarea class="message" name="" id="" placeholder="Type your message" cols="30" rows="10"></textarea>
-                                <input class="submit" type="submit">
+                            <form class="contact_form" action="#">
+                                <input id="name" type="name" placeholder="Your Name" required>
+                                <input id="email" type="email" placeholder="Your Email" required style="margin-top: 1rem;">
+                                <textarea id="message" name="" class="msg" placeholder="Type your message" cols="30" rows="10" required></textarea>
+                                <input class="submit" type="submit" onclick="sendMail()">
                             </form>
                         </div>
                     </div>
@@ -79,7 +87,7 @@
                 <div class="col-12">
                     <h6>GOT A PROJECT IN MIND?</h6>
                     <h1>LET'S <span>CONNECT</span></h1>
-                    <a href="contact.html" class="socmed">GET IN TOUCH</a>
+                    <a href="contact.html" class="socmed" style="margin-left: 2.5rem;">GET IN TOUCH</a>
                 </div>
             </div>
         </div>
