@@ -106,11 +106,12 @@ button:hover {
 }
 
 .socmed {
-  margin: 0.5rem;
+  margin-right: 2.4rem;
+  margin-bottom: .5rem;
   display: inline-block;
   padding: 1em 0;
   border-radius: 0;
-	color: rgb(188, 188, 188);
+	color: rgb(225, 225, 225);
   letter-spacing: 1px;
 	text-transform: none;
 	text-decoration: none;
@@ -203,11 +204,13 @@ button:hover {
     display: flex !important;
   }
   .home h1 {
-    font-size: 84px;
+    font-size: 80px;
     margin-top: 2rem !important;
   }
   .home .socmed {
-    font-size: 12px;
+    font-size: 12.7px;
+    margin: 1rem;
+    margin-left: 0rem;
   }
   .home button {
     width: 100%;
@@ -321,7 +324,7 @@ button:hover {
 
 @media screen and (max-width: 410px) {
   .connect h1 {
-    font-size: 6.5rem;
+    font-size: 6.5rem !important;
   }
 }
 
@@ -338,9 +341,10 @@ button:hover {
   font-weight: 300;
 }
 
-.footer span {
+.footer span a {
   background-color: transparent;
   color: rgb(158, 158, 158);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 450px) {
@@ -458,7 +462,10 @@ button:hover {
     font-size: 40px !important;
   }
   .about .disc p {
-    font-size: 15px;
+    font-size: 18px;
+  }
+  .about .award-disc p {
+    font-size: 18px;
   }
 }
 
@@ -582,7 +589,7 @@ button:hover {
 }
 
 .modal {
-  background-color: rgba(255, 255, 255, 0.161);
+  background-color: rgba(66, 66, 66, 0.161);
   color: white;
 }
 
@@ -698,18 +705,18 @@ button:hover {
   background-color: rgb(18, 18, 18);
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 400px) {
   .form {
     margin-top: 0rem;
   }
-  .contact h1 {
-    font-size: 75px;
+  .contact .disc h1 {
+    font-size: 78px !important;
   }
 }
 
 @media screen and (max-width: 450px) {
   .contact .disc h1 {
-    font-size: 88px !important;
+    font-size: 88px;
     width: 100%;
   }
   
