@@ -169,7 +169,7 @@ button:hover {
   }
 
   .socmed {
-    margin-right: 1rem !important;
+    margin: .4rem !important;
     margin-bottom: .5rem;
     display: inline-block;
     padding: 1em 0;
@@ -464,7 +464,7 @@ button:hover {
 
 @media screen and (max-width: 410px) {
   .about {
-    margin-top: 0rem;
+    margin-top: 1rem;
   }
   .about .disc {
     padding: 0px 0px;
@@ -725,17 +725,6 @@ button:hover {
     margin-top: 0rem;
   }
   .contact .disc h1 {
-    font-size: 78px !important;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .contact .disc h1 {
-    font-size: 88px;
-    width: 100%;
-  }
-  
-  .form {
-    margin-top: 0rem;
+    font-size: 77px !important;
   }
 }
