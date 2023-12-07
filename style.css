@@ -106,7 +106,7 @@ button:hover {
 }
 
 .socmed {
-  margin-right: 1.5rem;
+  margin-right: 2.4rem;
   margin-bottom: .5rem;
   display: inline-block;
   padding: 1em 0;
@@ -163,43 +163,58 @@ button:hover {
     display: none !important;
 }
 
-@media (max-width: 450px) {
-  .home {
-    width: 100%;
-    overflow: hidden !important;
-  }
-  .hide-sm {
-    display: none;
-  }
-  .display-sm {
-    display: flex !important;
-  }
-  .home p {
-    font-size: 20px;
-  }
-  .home h1 {
-    font-size: 84px;
-    margin-top: 1rem !important;
-  }
-  .home .socmed {
-    font-size: 15px;
-  }
-  .home button {
-    width: 100%;
-  }
-  .connect {
-    width: 100%;
-    overflow: hidden !important;
-  }
-  .connect h1 {
-    font-size: 7.5rem !important;
-  }
-}
-
 @media screen and (max-width: 400px) {
   .hide-sm {
     display: none;
   }
+
+  .socmed {
+    margin-right: 1rem !important;
+    margin-bottom: .5rem;
+    display: inline-block;
+    padding: 1em 0;
+    border-radius: 0;
+    color: rgb(225, 225, 225);
+    letter-spacing: 1px;
+    text-transform: none;
+    text-decoration: none;
+    position: relative;
+    &:before,
+    &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 0;
+  
+    }
+    &:before{
+      transition: width 0s ease,background .4s ease;
+      left: 0;
+      right: 0;
+        bottom: 6px;
+    }
+    &:after{
+      right: 2.2%;
+        bottom: 6px;
+        background: white;
+      transition: width .4s ease;
+    }
+    
+    &:hover{
+      &:before{
+        width: 97.8%;
+        background: white;
+          transition: width .4s ease;
+      }
+      &:after{
+        width: 97.8%;
+          background: 0 0;
+        transition: all 0s ease;
+      }
+    }
+  }
+  
   .display-sm {
     display: flex !important;
   }
