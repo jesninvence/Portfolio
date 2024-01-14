@@ -90,7 +90,8 @@ button:hover {
     margin-top: 2rem !important;
   }
   .home .socmed {
-    margin: 0rem !important;
+    margin-right: .2rem !important;
+    font-size: 15px;
     max-width: 100%;
   }
   .home a button {
@@ -135,7 +136,10 @@ button:hover {
   }
 
   .contact h1 {
-    font-size: 75px !important;
+    font-size: 60px !important;
+  }
+  .contact p {
+    font-size: 20px !important;
   }
   .contact .form {
     margin-top: 0rem !important;
