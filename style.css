@@ -79,8 +79,8 @@ button:hover {
 
 @media (max-width: 450px) {
   .home .socmed {
-    margin: 0rem !important;
-    font-size: 15px;
+    margin-right: .2rem !important;
+    font-size: 14px !important;
     max-width: 100%;
   }
 }
