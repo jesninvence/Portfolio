@@ -323,9 +323,6 @@ button:hover {
     --marquee-elements-displayed: 3;
   }
   .marquee:before, .marquee:after { width: 5rem; }
-  .marquee-content li {
-    font-size: 3.5rem;
-  }
 }
 
 /*****PROCESS****/
