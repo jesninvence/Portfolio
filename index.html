@@ -19,7 +19,12 @@
     
     <title>Portfolio</title>
 </head>
-<body class="show-chatbot">
+<body>
+
+    <div id="preloader">
+
+    </div>
+
     <header> 
         <a class="logo" href="index.html">JV</a>
         <nav>
@@ -136,28 +141,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="chatbot-toggler">
-        <span class="material-symbols-outlined"><i class="fa-regular fa-comment-dots"></i></span>
-        <span class="material-symbols-outlined"><i class="fa-regular fa-circle-xmark"></i></span>
-    </div>
-    <div class="chatbot">
-        <header>
-            <h2 class="text-center">Chatbot</h2>
-        </header>
-        <ul class="chatbox">
-            <li class="chat incoming">
-                <span class="material-symbols-outlined"><i class="fa-solid fa-robot"></i></span>
-                <p>Hi there 👋 <br> How can I help you today?</p>
-            </li>
-            <li class="chat outgoing">
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </li>
-        </ul>
-        <div class="chat-input">
-            <textarea placeholder="Enter a message..." required></textarea>
-            <span id="send-btn" class="material-symbols-outlined"><i class='bx bx-send'></i></span>
-        </div>
-    </div> -->
     <div class="footer">
         <div class="container text-center">
             <div class="row">
@@ -168,5 +151,12 @@
         </div>
     </div>
 </body>
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+</script>
 <script src="script.js"></script>
 </html>
