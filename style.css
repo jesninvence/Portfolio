@@ -1122,10 +1122,18 @@ text-align: center;
 /*========== PreLoader ==========*/
 
 #preloader {
-  background: #000 url(img/loader.gif) no-repeat center center;
+  background: #000 url(img/spinner.mov.gif) no-repeat center center;
   background-size: 20%;
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 100;
+}
+
+@media only screen and (max-width: 576px) {
+  #preloader {
+    background-size: 40%;
+    width: 100%;
+    height: 100vh;
+  }
 }
