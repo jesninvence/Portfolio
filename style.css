@@ -1122,8 +1122,8 @@ text-align: center;
 /*========== PreLoader ==========*/
 
 #preloader {
-  background: #000 url(img/spinner.mov.gif) no-repeat center center;
-  background-size: 20%;
+  background: #000 url(img/bump.gif) no-repeat center center;
+  background-size: 30%;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -1132,8 +1132,12 @@ text-align: center;
 
 @media only screen and (max-width: 576px) {
   #preloader {
-    background-size: 40%;
+    background-size: 60%;
     width: 100%;
     height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 }
